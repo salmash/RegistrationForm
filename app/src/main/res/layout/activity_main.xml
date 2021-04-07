@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="30dp"
+                    android:background="#CB052F50"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:padding="16dp"
+                    android:text="Registration Form"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/sectionStyle"
+                    android:text="Your Full Name :" />
+
+                <EditText
+                    android:id="@+id/edtName"
+                    style="@style/informationStyle"
+                    android:hint=" Name" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/sectionStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Email :" />
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    style="@style/informationStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint=" E-mail"
+                    android:inputType="textEmailAddress" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    style="@style/sectionStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password : " />
+
+                <EditText
+                    android:id="@+id/edtPassword"
+                    style="@style/informationStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint=" Password"
+                    android:inputType="textPersonName"
+                    android:password="true" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/sectionStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Phone Number :" />
+
+                <EditText
+                    android:id="@+id/edtPhone"
+                    style="@style/informationStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint=" Phone"
+                    android:inputType="phone" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/sectionStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose Your Gender :" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    style="@style/btnStyle"
+                    android:layout_width="202dp"
+                    android:layout_height="wrap_content"
+                    android:background="#E3E3E3"
+                    android:minHeight="40dp"
+                    android:padding="14dp"
+                    android:scrollbarSize="16dp" />
+
+                <Switch
+                    android:id="@+id/btnSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="40dp"
+                    android:background="#EFE7E7"
+                    android:fontFamily="sans-serif-black"
+                    android:padding="9dp"
+                    android:text="Student"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:onClick="btnSave_OnClick"
+                    android:text="Save"
+                    app:rippleColor="#FFFFFF"
+                    style="@style/btnStyle" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
